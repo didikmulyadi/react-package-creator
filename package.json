@@ -1,0 +1,47 @@
+{
+  "name": "@didik-mulyadi/package-name",
+  "version": "1.0.0",
+  "description": "React Component",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "node esbuild-serve.js",
+    "build": "npm run clean && node esbuild-build.js && tsc",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "babel-loader": "^8.0.6",
+    "cypress": "^10.7.0",
+    "esbuild": "^0.19.2",
+    "esbuild-node-externals": "^1.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/didikmulyadi/package-name"
+  },
+  "homepage": "https://github.com/didikmulyadi/package-name",
+  "author": {
+    "name": "Didik Mulyadi",
+    "email": "didikmulyadi12@gmail.com",
+    "url": "https://www.linkedin.com/in/didikmulyadi"
+  },
+  "license": "MIT",
+  "files": [
+    "dist/**/*",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "react"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
